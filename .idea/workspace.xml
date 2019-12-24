@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c24e8c91-aecf-4894-94fb-e210380abcdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/common.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/test.py" afterDir="false" />
     </list>
@@ -15,28 +13,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1526">
-              <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+            <state relative-caret-position="272">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
               <folding>
                 <element signature="e#15#45#0" expanded="true" />
                 <element signature="e#433#548#0" expanded="true" />
-                <element signature="e#747#773#0" expanded="true" />
                 <element signature="e#2005#2096#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="264">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#171#864#0" expanded="true" />
                 <element signature="e#697#725#0" expanded="true" />
               </folding>
             </state>
@@ -59,8 +57,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/utils/webdriver_config.py" />
-        <option value="$PROJECT_DIR$/base/test.py" />
         <option value="$PROJECT_DIR$/utils/common.py" />
+        <option value="$PROJECT_DIR$/base/test.py" />
       </list>
     </option>
   </component>
@@ -189,12 +187,20 @@
       <workItem from="1576808887045" duration="8916000" />
       <workItem from="1577065794915" duration="4426000" />
       <workItem from="1577080684016" duration="8194000" />
-      <workItem from="1577151554936" duration="22585000" />
+      <workItem from="1577151554936" duration="22701000" />
     </task>
+    <task id="LOCAL-00001" summary="新增错误截图方法">
+      <created>1577181411292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577181411292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79256000" />
+    <option name="totallyTimeSpent" value="79372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -227,6 +233,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增错误截图方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增错误截图方法" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Autoselenium$common.coverage" NAME="common Coverage Results" MODIFIED="1577180472486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
@@ -311,19 +321,6 @@
     <entry file="file://$PROJECT_DIR$/screenShots/20191224/174312.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1526">
-          <caret line="71" column="31" lean-forward="true" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-            <element signature="e#433#548#0" expanded="true" />
-            <element signature="e#747#773#0" expanded="true" />
-            <element signature="e#2005#2096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-643338342/nt.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1192">
@@ -382,11 +379,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#171#864#0" expanded="true" />
             <element signature="e#697#725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#433#548#0" expanded="true" />
+            <element signature="e#2005#2096#0" expanded="true" />
           </folding>
         </state>
       </provider>
