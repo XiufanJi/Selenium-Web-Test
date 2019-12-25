@@ -1,6 +1,5 @@
 import os
 import time
-from selenium import webdriver
 
 
 class Utils():
@@ -14,6 +13,7 @@ class Utils():
         folder = time.strftime("%Y%m%d")
         filepath = '../screenShots'
         pic_name = time.strftime("%H%M%S")
+        """进行路径组合，还可以使用os.path.join方法"""
         if os.path.exists(filepath):
             if os.path.exists(filepath+'/'+folder):
                 driver.get_screenshot_as_file(filepath+'/{}/{}.png'.format(folder, pic_name))

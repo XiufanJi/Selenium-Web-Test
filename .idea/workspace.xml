@@ -14,51 +14,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="1738">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="e#15#45#0" expanded="true" />
                 <element signature="e#461#577#0" expanded="true" />
+                <element signature="e#658#3199#0" expanded="true" />
                 <element signature="e#1125#1216#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/common.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/remote/webelement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="1250">
+              <caret line="684" column="68" lean-forward="true" selection-start-line="684" selection-start-column="68" selection-end-line="684" selection-end-column="68" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#116#948#0" expanded="true" />
-                <element signature="e#127#191#1" expanded="true" />
+                <element signature="e#20570#21021#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python/Lib/ntpath.py">
+        <entry file="file://$PROJECT_DIR$/utils/common.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/chrome/webdriver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="96">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <element signature="e#1033#1233#1" expanded="true" />
-                <element signature="e#1479#3554#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#127#191#1" expanded="true" />
+                <element signature="e#993#1021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +71,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/utils/webdriver_config.py" />
-        <option value="$PROJECT_DIR$/base/test.py" />
         <option value="$PROJECT_DIR$/utils/common.py" />
+        <option value="$PROJECT_DIR$/base/test.py" />
       </list>
     </option>
   </component>
@@ -103,17 +94,6 @@
             <path>
               <item name="Autoselenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="Autoselenium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autoselenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autoselenium" type="462c0819:PsiDirectoryNode" />
-              <item name="screenShots" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Autoselenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Autoselenium" type="462c0819:PsiDirectoryNode" />
-              <item name="screenShots" type="462c0819:PsiDirectoryNode" />
-              <item name="20191225" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -153,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.common">
+  <component name="RunManager" selected="Python.test">
     <configuration name="common" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Autoselenium" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.common" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.common" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +202,7 @@
       <workItem from="1577065794915" duration="4426000" />
       <workItem from="1577080684016" duration="8194000" />
       <workItem from="1577151554936" duration="23065000" />
-      <workItem from="1577234939827" duration="7309000" />
+      <workItem from="1577234939827" duration="21775000" />
     </task>
     <task id="LOCAL-00001" summary="新增错误截图方法">
       <created>1577181411292</created>
@@ -238,22 +218,29 @@
       <option name="project" value="LOCAL" />
       <updated>1577181518088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修正截图路径判断方法">
+      <created>1577246380633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577246380633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87045000" />
+    <option name="totallyTimeSpent" value="101511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2773556" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2773556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3852459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,11 +266,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增错误截图方法" />
     <MESSAGE value="去除私有信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除私有信息" />
+    <MESSAGE value="修正截图路径判断方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正截图路径判断方法" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Autoselenium$common.coverage" NAME="common Coverage Results" MODIFIED="1577245130958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/Autoselenium$test.coverage" NAME="test Coverage Results" MODIFIED="1577244399018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/Autoselenium$test.coverage" NAME="test Coverage Results" MODIFIED="1577265181634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/__init__.py">
@@ -406,29 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/chrome/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="e#1033#1233#1" expanded="true" />
-            <element signature="e#1479#3554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#45#0" expanded="true" />
-            <element signature="e#461#577#0" expanded="true" />
-            <element signature="e#1125#1216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -436,14 +401,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenShots/20191225/132043.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/chrome/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#1033#1233#1" expanded="true" />
+            <element signature="e#1479#3554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="96">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#116#948#0" expanded="true" />
             <element signature="e#127#191#1" expanded="true" />
+            <element signature="e#993#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenShots/20191225/161341.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://D:/Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="684" column="68" lean-forward="true" selection-start-line="684" selection-start-column="68" selection-end-line="684" selection-end-column="68" />
+          <folding>
+            <element signature="e#20570#21021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+            <element signature="e#461#577#0" expanded="true" />
+            <element signature="e#658#3199#0" expanded="true" />
+            <element signature="e#1125#1216#0" expanded="true" />
           </folding>
         </state>
       </provider>
