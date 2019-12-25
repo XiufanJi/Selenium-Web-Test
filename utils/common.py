@@ -1,25 +1,34 @@
 import os
 import time
+from selenium import webdriver
 
 
-class utils():
+class Utils():
     def get_screenShot(self, driver):
+        """
+        :param driver: 浏览器驱动
+        :return:
+        """
         """在进行截图保存的时候，需要注意文件名，windows系统中，文件名不
         能包括特殊字符，否则会保存失败"""
         folder = time.strftime("%Y%m%d")
         filepath = '../screenShots'
-        now = time.strftime("%H%M%S")
+        pic_name = time.strftime("%H%M%S")
         if os.path.exists(filepath):
-            driver.get_screenshot_as_file(filepath+'/{}/{}.png'.format(folder, now))
+            if os.path.exists(filepath+'/'+folder):
+                driver.get_screenshot_as_file(filepath+'/{}/{}.png'.format(folder, pic_name))
+            else:
+                os.makedirs(filepath + './{}'.format(folder))
+                driver.get_screenshot_as_file(filepath + '/{}/{}.png'.format(folder, pic_name))
         else:
+            """创建一级目录"""
+            os.mkdir(filepath)
             """在指定的目录下创建子目录"""
-            os.makedirs('../screenShots'+'./{}'.format(folder))
-            driver.get_screenshot_as_file(filepath+"/{}/{}.png".format(folder, now))
+            os.makedirs(filepath+'./{}'.format(folder))
+            driver.get_screenshot_as_file(filepath+"/{}/{}.png".format(folder, pic_name))
 
 
 # if __name__ == '__main__':
-#     utils = utils()
-#     utils.get_screenShot()
-
-
+#     utils = Utils()
+#     utils.get_screenShot(webdriver.Chrome())
 
