@@ -10,16 +10,18 @@ import unittest
 import os
 from utils.common import Utils
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.select import Select
 # 测试网站登录功能
 
 
 class test(unittest.TestCase):
     def setUp(self):
         # 指定测试所用的浏览器（chrome、Firefox、IE、edge、Safari...）
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         self.utils = Utils()
 
     '''测试邮箱登录'''
+    @unittest.skip('暂不测试')
     def test_login(self):
         try:
             print(os.path.relpath('D:\selenium\Autoselenium\screenShot'))
@@ -68,6 +70,42 @@ class test(unittest.TestCase):
             self.driver.switch_to.window(self.driver.current_window_handle)
         except Exception as e:
             """错误截图保存"""
+            self.utils.get_screenShot(self.driver)
+            raise e
+        finally:
+            self.driver.close()
+            self.driver.quit()
+
+    """测试下拉选择框，局部控件滑动"""
+    def test_select(self):
+        try:
+            self.driver.get("http://company.conlin360.com:81/zentao/user-login.html")
+            self.driver.implicitly_wait(3)
+            self.driver.maximize_window()
+            account = self.driver.find_element_by_name("account")
+            account.clear()
+            account.send_keys("gaosha")
+            password = self.driver.find_element_by_name("password")
+            password.clear()
+            password.send_keys("gs123456")
+            self.driver.implicitly_wait(3)
+            self.driver.find_element_by_css_selector("button#submit").click()
+            sleep(3)
+            self.driver.find_element_by_link_text("测试").click()
+            self.driver.implicitly_wait(3)
+            self.driver.find_element_by_css_selector("li[data-id='bug']").click()
+            self.driver.implicitly_wait(3)
+            self.driver.find_element_by_link_text("提Bug").click()
+            self.driver.implicitly_wait(3)
+            self.driver.find_element_by_css_selector("a.chosen-single").click()
+            """使用js脚本进行局部部件的滚动条滑动:scrollTop =0为滑动至顶端"""
+            js = "document.getElementsByClassName('chosen-drop')[0].scrollTop=10000"
+            self.driver.execute_script(js)
+            sleep(3)
+            select = self.driver.find_element_by_css_selector("li[title='微信小程序']")
+            select.click()
+            sleep(3)
+        except Exception as e:
             self.utils.get_screenShot(self.driver)
             raise e
         finally:
