@@ -21,7 +21,7 @@ class test(unittest.TestCase):
         self.utils = Utils()
 
     '''测试邮箱登录'''
-    @unittest.skip('暂不测试')
+    @unittest.skip('测试通过，暂不测试')
     def test_login(self):
         try:
             print(os.path.relpath('D:\selenium\Autoselenium\screenShot'))
@@ -77,6 +77,7 @@ class test(unittest.TestCase):
             self.driver.quit()
 
     """测试下拉选择框，局部控件滑动"""
+    @unittest.skip("测试通过，暂不测试")
     def test_select(self):
         try:
             self.driver.get("http://company.conlin360.com:81/zentao/user-login.html")
@@ -84,10 +85,10 @@ class test(unittest.TestCase):
             self.driver.maximize_window()
             account = self.driver.find_element_by_name("account")
             account.clear()
-            account.send_keys("gaosha")
+            account.send_keys("your account")
             password = self.driver.find_element_by_name("password")
             password.clear()
-            password.send_keys("gs123456")
+            password.send_keys("your password")
             self.driver.implicitly_wait(3)
             self.driver.find_element_by_css_selector("button#submit").click()
             sleep(3)
@@ -105,6 +106,39 @@ class test(unittest.TestCase):
             select = self.driver.find_element_by_css_selector("li[title='微信小程序']")
             select.click()
             sleep(3)
+        except Exception as e:
+            self.utils.get_screenShot(self.driver)
+            raise e
+        finally:
+            self.driver.close()
+            self.driver.quit()
+
+    """测试弹出框"""
+    @unittest.skip("测试通过，暂不测试")
+    def test_alert(self):
+        try:
+            self.driver.get("file:///E:/test.html")
+            self.driver.implicitly_wait(3)
+            self.driver.find_element_by_css_selector("input#alert").click()
+            self.driver.implicitly_wait(3)
+            alert = self.driver.switch_to.alert
+            # self.driver.implicitly_wait(3)
+            sleep(3)
+            alert.accept()
+            sleep(3)
+            self.driver.find_element_by_css_selector("input#confirm").click()
+            self.driver.implicitly_wait(3)
+            alert = self.driver.switch_to.alert
+            sleep(3)
+            alert.dismiss()
+            sleep(3)
+            self.driver.find_element_by_css_selector("input#prompt").click()
+            self.driver.implicitly_wait(3)
+            alert = self.driver.switch_to.alert
+            self.driver.implicitly_wait(3)
+            alert.send_keys("hello")
+            sleep(3)
+            alert.accept()
         except Exception as e:
             self.utils.get_screenShot(self.driver)
             raise e
